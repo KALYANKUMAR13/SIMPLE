@@ -8,9 +8,9 @@ public class Main
 		String s = scan.nextLine();
 		String[] array = s.split(" ");
 		
-	   for(int i=0; i<array.length; i++)
+	   for(int i=0; i<array.length; i++)   // To iterare the loop
 		{
-		    for(int j=0;j<array.length-1;j++)
+		    for(int j=0;j<array.length-1;j++)  // To iterate each element
 		    {
 		        if(array[j].length() > array[j+1].length())
 		        {
