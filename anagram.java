@@ -17,14 +17,15 @@ public class Main
 		     {
 		       if(aar[i]==bar[i])
 		        no=true;
-		       else
+		       else{
 		        no= false;
-            break;
+                        break;
+		       }	       
 		     }
 		     if(no)
 		      System.out.print("ANAGRAM");
-         else
-          System.out.print("NOT ANAGRAM");
+                     else
+                       System.out.print("NOT ANAGRAM");
 		 }
 		 else
 		 {
