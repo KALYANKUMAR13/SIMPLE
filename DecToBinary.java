@@ -12,7 +12,7 @@ public class Main
 		    n = n/2;
 		    c++;
 		}
-		for(int i=0;i<c;i++)
+		for(int i=c-1;i>=0;i--)
 		{
 		    System.out.print(bin[i]);
 		}
