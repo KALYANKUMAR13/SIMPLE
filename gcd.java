@@ -8,8 +8,8 @@ public class Main
 		int n1 = scan.nextInt();
 		int n2 = scan.nextInt();
 	 
-	    while(n1!=n2)
-		if(n1<n2)
+	    while(n1!=n2){
+		if(n1>n2)
 		 {
 		   n1 = n1-n2;  
 		 }
@@ -17,6 +17,7 @@ public class Main
 		 {
 		     n2 = n2-n1;
 		 }
+	    }   
 		 System.out.print("The GCD of given numbers is:"n1);
 	}
 }
