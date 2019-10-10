@@ -18,6 +18,6 @@ public class Main
 		     n2 = n2-n1;
 		 }
 	    }   
-		 System.out.print("The GCD of given numbers is:"n1);
+		 System.out.print("The GCD of given numbers is:"+n1);
 	}
 }
