@@ -24,7 +24,7 @@ public class Main
 		         c++;
 		         if(sum == fin)
 		         {
-			    //for(int k=0;k<j;k++)   To inorder not to store the elements in temparray	 
+			    //for(int k=i;k<j;k++)   To inorder not to store the elements in temparray	 
 		             for(int k=0;k<c;k++)
 		             {
 		                 System.out.print(temar[k]+" ");
