@@ -1,0 +1,36 @@
+import java.util.*;
+import java.lang.*;
+
+class Main{
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+       String s = scan.nextLine();
+     String n="";
+       
+        int dcount=0;
+        for(int i=0;i<s.length();i++)
+        {
+            boolean k = true;
+            char z =s.charAt(i);
+            for(int j=0;j<n.length();j++)
+            {
+                char l = n.charAt(j);
+                //int t = Character.compare(l,z);
+                if( s.charAt(i)==n.charAt(j) )
+                {
+                    k=false;
+                    break;
+                }
+            }
+            if(k)
+            {
+               n = n+z;
+            }
+        }
+        //for(int i=0;i<dcoun;i++)
+        {
+            System.out.println(n);
+        }
+    }
+}
