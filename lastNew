@@ -1,0 +1,77 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	int arr[] = {1,1,2,2,3,4,5,6,6,7,1,2,5,4,4,6};
+	int set[] = new int[arr.length];
+//	System.out.println(set);
+    int count=0;
+	for(int i=0;i<arr.length;i++)
+	{
+	    boolean k = true;
+	    for(int j=0;j<count;j++)
+	    {
+	        if(arr[i]==set[j])
+	        {
+	            k= false;
+	            break;
+	        }
+	    }
+	    if(k)
+	    {
+	        set[count] = arr[i];
+	        count++;
+	    }
+	}
+	for(int i=0;i<count;i++)
+	{
+	    System.out.println(set[i]+"hi");
+	}
+	int occ[] = new int[count];
+	int l=0;
+	for(int i=0;i<count;i++)
+	{
+	   int t = set[i];
+	   int c =0;
+	   for(int j=0;j<arr.length;j++)
+	   {
+	       if(t==arr[j])
+	       {
+	           c++;
+	       }
+	   }
+	   occ[l] = c;
+	   l++;
+	}
+	for(int k=0;k<l;k++)
+	{
+	    System.out.println(set[k]+"  OCCerrence "+occ[k]);
+	}
+	int h = occ[2];
+	for(int o=0;o<occ.length;o++)
+	{
+	    if(occ[o]>h)
+	    {
+	        h = occ[o];
+	    }
+	
+	}
+	System.out.println(h);
+	for(int i=0;i<l;i++)
+	{
+	    if(h==occ[i])
+	    {
+	        System.out.println(set[i] +"::"+h);
+	    }
+	}
+	
+	}
+}
